@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvadersLab", "InvadersLab\InvadersLab.csproj", "{01C287AF-D7AB-43C1-A1EB-7AEBC51D4072}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestInvaders", "UnitTestInvaders\UnitTestInvaders.csproj", "{0B90FC28-31F6-4EE7-8D3D-7D9D39595014}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{01C287AF-D7AB-43C1-A1EB-7AEBC51D4072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C287AF-D7AB-43C1-A1EB-7AEBC51D4072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C287AF-D7AB-43C1-A1EB-7AEBC51D4072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B90FC28-31F6-4EE7-8D3D-7D9D39595014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B90FC28-31F6-4EE7-8D3D-7D9D39595014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B90FC28-31F6-4EE7-8D3D-7D9D39595014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B90FC28-31F6-4EE7-8D3D-7D9D39595014}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
