@@ -8,6 +8,15 @@ namespace UnitTestInvaders
     [TestClass]
     public class UnitTest1
     {
+        private Stars stars;
+        [TestInitialize]
+        public void Init()
+        {
+            var random = new Random();
+            var boundaries = new Rectangle(5, 5, 10, 10);
+            stars = new InvadersLab.Stars(random, boundaries);
+        }
+        
         [TestMethod]
         public void TestStarsMethods()
         {
@@ -36,6 +45,12 @@ namespace UnitTestInvaders
             var stars = new InvadersLab.Stars(random, boundaries);
             Assert.IsNotNull(stars);
             Assert.AreEqual(boundaries.Size, stars.Size);
+        }
+
+        [TestMethod] // Memento pattern
+        public void TestStarStateRecord()
+        {
+            StarsMemento memento = stars.CreateMemento();
         }
     }
 }

@@ -32,5 +32,10 @@ namespace InvadersLab
         {
             stars.Twinkle();
         }
+
+        public object getStarState()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
