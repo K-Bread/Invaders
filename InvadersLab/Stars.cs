@@ -63,7 +63,7 @@ namespace InvadersLab
                              new Pen(Color.Tomato));
         }
         //_____________________________________________________________________
-        private struct Star
+        public struct Star
         {
             public Point point;
             public Pen pen;
@@ -97,6 +97,13 @@ namespace InvadersLab
             
         }
 
-        
+
+
+        public StarsMemento CreateMemento()
+        {
+            var memento = new StarsMemento();
+            memento.storeCollection(allStars);
+            return memento;
+        }
     }
 }

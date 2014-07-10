@@ -51,6 +51,7 @@ namespace UnitTestInvaders
         public void TestStarStateRecord()
         {
             StarsMemento memento = stars.CreateMemento();
+            Assert.IsNotNull(memento);
         }
     }
 }

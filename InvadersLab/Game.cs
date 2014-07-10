@@ -33,9 +33,9 @@ namespace InvadersLab
             stars.Twinkle();
         }
 
-        public object getStarState()
+        public StarsMemento getStarState()
         {
-            throw new NotImplementedException();
+            return stars.CreateMemento();
         }
     }
 }

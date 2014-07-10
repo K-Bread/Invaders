@@ -16,11 +16,12 @@ namespace UnitTestInvaders
         }
         
         [TestMethod]
-        public void TestMethod1()
+        public void TestGameTwinkle()
         {
             var starState1 = game.getStarState();
             game.Twinkle();
-            
+            var starState2 = game.getStarState();
+            Assert.IsFalse(starState1.Equals(starState2));
         }
     }
 }

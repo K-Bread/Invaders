@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UnitTestInvaders
+namespace InvadersLab
 {
-    class StarsMemento
+    public enum ShipType
     {
+        Star
     }
 }
