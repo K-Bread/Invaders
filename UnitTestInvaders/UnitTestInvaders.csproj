@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestShot.cs" />
+    <Compile Include="UnitTestPlayerShip.cs" />
     <Compile Include="UnitTestInvader.cs" />
     <Compile Include="UnitTestGame.cs" />
   </ItemGroup>
