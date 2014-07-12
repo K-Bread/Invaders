@@ -18,12 +18,13 @@ namespace UnitTestInvaders
         }
         
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethodInvaderMove()
         {
             Direction d = Direction.Down;
             var location1 = new Point(invader.Location.X, invader.Location.Y);
             invader.Move(d);
             Assert.AreNotEqual(location1, invader.Location);
+            Assert.IsTrue(location1.Y < invader.Location.Y);
         }
     }
 }

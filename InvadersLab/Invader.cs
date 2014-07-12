@@ -30,11 +30,11 @@ namespace InvadersLab
             var location = Location;
             if (d.Equals(Direction.Down))
             {
-                location.Offset(VerticalInterval, 0); // not working.
+                location.Offset(0, VerticalInterval); // not working.
             }
             else
             {
-                location.Offset(0, HorizontalInterval);
+                location.Offset(HorizontalInterval, 0);
             }
             Location = location; // validate
         }
