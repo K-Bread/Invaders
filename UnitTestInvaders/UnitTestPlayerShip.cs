@@ -39,5 +39,11 @@ namespace UnitTestInvaders
             Assert.AreNotEqual(location2, location3);
             Assert.AreEqual(location1, location3);
         }
+
+        [TestMethod]
+        public void TestPlayerDraw()
+        {
+            //Graphics.FromImage()
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace InvadersLab
         {
             g.DrawRectangle(new Pen(Color.Black, 300), boundaries);
             stars.Draw(g);
+            playerShip.Draw(g);
         }
 
         public void Twinkle()

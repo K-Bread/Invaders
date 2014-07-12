@@ -12,9 +12,17 @@ namespace InvadersLab
         public Point Location { get; set; }
         public bool Alive { get; set; }
 
+        public Rectangle Area 
+        { 
+            get 
+            {
+                return new Rectangle(Location, new Size(20, 20));
+            } 
+        }
+
         public PlayerShip()
         {
-            Location = new Point(10, 10);
+            Location = new Point(300, 200);
             Alive = true;
         }
 
@@ -34,6 +42,11 @@ namespace InvadersLab
 
 
 
-        
+
+
+        public void Draw(Graphics g)
+        {
+            g.DrawEllipse(new Pen(Color.Red), Area);
+        }
     }
 }
