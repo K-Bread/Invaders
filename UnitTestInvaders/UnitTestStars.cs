@@ -6,7 +6,7 @@ using System.Drawing;
 namespace UnitTestInvaders
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestStars
     {
         private Stars stars;
         [TestInitialize]
