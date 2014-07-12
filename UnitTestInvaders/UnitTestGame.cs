@@ -32,5 +32,11 @@ namespace UnitTestInvaders
             Point playerLocation2 = game.getPlayerLocation();
             Assert.AreNotEqual(playerLocation1, playerLocation2);
         }
+
+        [TestMethod]
+        public void TestGameGo()
+        {
+
+        }
     }
 }
