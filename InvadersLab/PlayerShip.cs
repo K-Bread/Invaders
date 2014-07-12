@@ -32,6 +32,8 @@ namespace InvadersLab
             Location = location;
         }
 
+
+
         
     }
 }

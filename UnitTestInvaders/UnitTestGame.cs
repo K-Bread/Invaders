@@ -23,5 +23,14 @@ namespace UnitTestInvaders
             var starState2 = game.getStarState();
             Assert.IsFalse(starState1.Equals(starState2));
         }
+
+        [TestMethod]
+        public void TestMovePlayer()
+        {
+            Point playerLocation1 = game.getPlayerLocation();
+            game.MovePlayer(Direction.Left);
+            Point playerLocation2 = game.getPlayerLocation();
+            Assert.AreNotEqual(playerLocation1, playerLocation2);
+        }
     }
 }

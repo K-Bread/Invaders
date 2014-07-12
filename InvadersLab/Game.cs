@@ -12,12 +12,15 @@ namespace InvadersLab
         private Rectangle boundaries;
         private Stars stars;
 
+        private PlayerShip playerShip;
+
         public Game(Random random, Rectangle clientRectangle)
         {
             // TODO: Complete member initialization
             this.random = random;
             this.boundaries = clientRectangle;
             stars = new Stars(random, clientRectangle);
+            playerShip = new PlayerShip();
         }
 
         public object Size { get { return boundaries.Size; } }
@@ -36,6 +39,16 @@ namespace InvadersLab
         public StarsMemento getStarState()
         {
             return stars.CreateMemento();
+        }
+
+        public void MovePlayer(Direction direction)
+        {
+            playerShip.Move(direction);
+        }
+
+        public Point getPlayerLocation()
+        {
+            return playerShip.Location;
         }
     }
 }
